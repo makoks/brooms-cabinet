@@ -1,3 +1,3 @@
 import React from 'react';
 
-export const Contacts = () => 'Коллеги';
+export const Contacts = () => <>Коллеги</>;
