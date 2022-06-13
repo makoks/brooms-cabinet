@@ -1,0 +1,37 @@
+@keyframes fly {
+  0% {transform: translateZ(0);}
+  50% {transform: translate3d(-1.5rem,-1.5rem,0);}
+  to {transform: translateZ(0);}
+}
+
+.cabinet__profile {
+  height: 100%;
+  text-align: center;
+}
+
+.cabinet__profile__row {
+  height: 100%;
+}
+
+.cabinet__profile__3dimage_work {
+  height: 450px;
+  animation: fly 4s ease-in-out infinite alternate;
+}
+
+.cabinet__profile__image-col {
+  align-self: end;
+}
+
+.cabinet__profile__3dimage_home {
+  height: 400px;
+}
+
+.cabinet__profile__title {
+  text-shadow: 0 0.075em rgb(0 0 0 / 25%);
+}
+
+@media (min-width: 1440px) {
+  .cabinet__profile__3dimage_work {
+    height: 650px;
+  }
+}
