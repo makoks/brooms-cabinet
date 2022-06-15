@@ -9,7 +9,7 @@ export const Tasks = ({data}) => {
 
 	useEffect(() => {
 		setItems(data)
-	}, data)
+	}, [data])
 
 	const reorder = (list, startIndex, endIndex) => {
 		const result = [...list]
