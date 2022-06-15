@@ -4,10 +4,26 @@ import { Layout, Switch, Space, Menu } from 'antd';
 import { UserOutlined, CheckCircleOutlined, TeamOutlined } from '@ant-design/icons';
 import { Contacts } from './components/Contacts';
 import { Profile } from './components/Profile';
-import { Tasks } from './components/Tasks';
+import { Tasks } from './components/Tasks/Tasks';
 import { PlantImage, RocketImage } from './images';
 import 'antd/dist/antd.css';
 import './App.css';
+
+const workData = [
+  {id: '0', content: 'Racing car sprays burning fuel into crowd.', completed: true},
+  {id: '1', content: 'Japanese princess to wed commoner.', completed: true},
+  {id: '2', content: 'Australian walks 100km after outback crash.', completed: false},
+  {id: '3', content: 'Man charged over missing wedding girl.', completed: true},
+  {id: '4', content: 'Los Angeles battles huge wildfires.', completed: false},
+]
+
+const homeData = [
+  {id: '5', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna', completed: false},
+  {id: '6', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing', completed: false},
+  {id: '7', content: 'Lorem', completed: false},
+  {id: '8', content: 'incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam', completed: false},
+  {id: '9', content: 'Помыть посуду', completed: false},
+]
 
 const { Header, Sider, Content } = Layout;
 
@@ -54,7 +70,7 @@ function App() {
           <Content className="cabinet__content">
             <Routes>
               <Route path="/" element={<Profile />} />
-              <Route path="tasks" element={<Tasks />} />
+              <Route path="tasks" element={<Tasks data={theme === 'home' ? homeData : workData}/>} />
               <Route path="contacts" element={<Contacts />} />
             </Routes>
           </Content>
