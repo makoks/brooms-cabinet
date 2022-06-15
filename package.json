@@ -15,7 +15,7 @@
     "gulp-less": "^5.0.0",
     "gulp-postcss": "^9.0.1",
     "less-plugin-npm-import": "^2.1.0",
-    "react": "^17.0.2",
+    "react": "^18.1.0",
     "react-css-theme-switcher": "^0.3.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
